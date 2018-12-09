@@ -2,7 +2,7 @@
   "name": "game-math",
   "version": "0.3.0",
   "description": "Game-related math functions",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "scripts": {
     "clean": "rimraf dist/*",
     "prebuild": "npm run clean -s",
