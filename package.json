@@ -1,6 +1,6 @@
 {
   "name": "game-math",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Game-related math functions",
   "main": "dist/index.js",
   "scripts": {
