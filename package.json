@@ -1,0 +1,21 @@
+{
+  "name": "game-math",
+  "version": "0.2.0",
+  "description": "Game-related math functions",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "prebuild": "npm run clean -s",
+    "build": "npm run build:scripts -s",
+    "build:scripts": "browserify -d src/index.js -p [minifyify --compressPath . --map index.js.map --output dist/index.js.map] | hashmark -n dist/index.js -s -l 8 -m assets.json dist/{name}.{hash}{ext}",
+    "test": "karma start --singleRun"
+  },
+  "author": "Aeyos",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "hashmark": "^5.0.0",
+    "minifyify": "^7.3.5",
+    "rimraf": "^2.6.2"
+  }
+}
