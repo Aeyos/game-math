@@ -7,7 +7,7 @@
     "clean": "rimraf dist/*",
     "prebuild": "npm run clean -s",
     "build": "npm run build:scripts -s",
-    "build:scripts": "browserify -d src/index.js -p [minifyify --compressPath . --map index.js.map --output dist/index.js.map] | hashmark -n dist/index.js -s -l 8 -m assets.json dist/{name}.{hash}{ext}",
+    "build:scripts": "browserify -d src/index.js -p [minifyify --compressPath . --map index.js.map --output dist/index.js.map] -o dist/index.js",
     "test": "karma start --singleRun"
   },
   "author": "Aeyos",
