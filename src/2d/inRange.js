@@ -4,4 +4,3 @@ module.exports = function inRange(p1, p2, distance) {
   
   return (distance * distance) - ((deltaX * deltaX) + (deltaY * deltaY));
 }
-
